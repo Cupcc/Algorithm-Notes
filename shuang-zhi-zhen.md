@@ -16,7 +16,7 @@ fast step2, slow steps 1,会在环中相遇
 
 [力扣](https://leetcode.cn/problems/linked-list-cycle-ii/)
 
-```Go
+```go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -59,7 +59,7 @@ func detectCycle(head *ListNode) *ListNode {
 2. 题目限定只有 **一个重复的整数**
 3. n≥1，所以nums长度`n+1`最小为2
 
-```Go
+```go
 // [1, n] 共 n+1个数，至少存在一个重复的数字
 // 题目给定只存在一个重复的数字
 func findDuplicate(nums []int) int {
@@ -91,7 +91,7 @@ func findDuplicate(nums []int) int {
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-```Go
+```go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -132,7 +132,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 
 [力扣](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 
-```Go
+```go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -173,7 +173,7 @@ func findFromEnd(head *ListNode, k int) *ListNode {
 
 双指针
 
-```C++
+```cpp
 // 双指针法
 bool isPalindrome(const string& s, int start, int end) {
     for (int i = start, j = end; i < j; ++i, --j) {
@@ -194,7 +194,7 @@ bool isPalindrome(const string& s, int start, int end) {
 
 \[i,j]结果依靠\[i+1, j-1], 所以i倒序，j正序
 
-```C++
+```cpp
 vector<vector<bool>> isPalindrome;
 void computePalindrome(const string& s) {
   // isPalindrome[i][j] 代表 s[i:j](双边包括)是否是回文字串
@@ -225,7 +225,7 @@ void computePalindrome(const string& s) {
 9. 遍历，依次选取字符为中心
 10. 可能是偶数回文，也可能是奇数回文，分别判断
 
-```Go
+```go
 func longestPalindrome(s string) string {
     res := ""
     for i := 0; i < len(s); i++ {
@@ -260,7 +260,7 @@ func subPalindrome(s string, left, right int) string {
 
 <figure><img src=".gitbook/assets/2.gif" alt=""><figcaption></figcaption></figure>
 
-```Go
+```go
 func removeDuplicates(nums []int) int {
     if len(nums) == 0 {
         return 0
@@ -284,7 +284,7 @@ func removeDuplicates(nums []int) int {
 11. 快慢指针移除==0的元素
 12. 剩余位置赋值为0
 
-```Go
+```go
 func moveZeroes(nums []int) {
     n := len(nums)
     slow, fast := 0, 0
@@ -302,7 +302,7 @@ func moveZeroes(nums []int) {
 
 调用移除元素的函数
 
-```Go
+```go
 func moveZeroes(nums []int) {
     p := removeElements(nums, 0)
     for ; p < len(nums); p++ {
@@ -332,7 +332,7 @@ func removeElements(nums []int, val int) int {
 
 两个指针一左一右
 
-```Go
+```go
 func twoSum(numbers []int, target int) []int {
     left, right := 0, len(numbers)-1
     // 两个数字，索引不能相同

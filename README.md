@@ -6,7 +6,7 @@
 
 **hash map实现**
 
-```C++
+```cpp
 /*
 // Definition for a Node.
 class Node {
@@ -47,7 +47,7 @@ public:
 };
 ```
 
-```Go
+```go
 func copyRandomList(head *Node) *Node {
     if head == nil {
         return nil
@@ -74,7 +74,7 @@ func copyRandomList(head *Node) *Node {
 
 **拼接+拆分**
 
-```Python
+```python
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         if not head: return
@@ -106,7 +106,7 @@ class Solution:
         return res
 ```
 
-```Go
+```go
 func copyRandomList(head *Node) *Node {
     if head == nil {
         return nil
@@ -154,7 +154,7 @@ func copyRandomList(head *Node) *Node {
 
 [力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台](https://leetcode.cn/problems/partition-list)
 
-```Go
+```go
 func partition(head *ListNode, x int) *ListNode {
     if head == nil {return nil}
     dummy1 := &ListNode{-1, nil}
